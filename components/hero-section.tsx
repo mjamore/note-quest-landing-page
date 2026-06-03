@@ -1,6 +1,6 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Apple, Star } from "lucide-react"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Apple, Star } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -30,10 +30,7 @@ export function HeroSection() {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-6 leading-tight text-balance">
-              Teach Your Kids{" "}
-              <span className="bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-400 bg-clip-text text-transparent">
-                Music by Ear
-              </span>
+              Teach Your Kids <span className="bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-400 bg-clip-text text-transparent">Music by Ear</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed text-pretty">
@@ -41,8 +38,12 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-              <Button asChild size="lg" className="bg-gradient-to-r from-pink-500 to-orange-400 hover:from-pink-600 hover:to-orange-500 text-white border-0 rounded-full px-8 py-6 text-lg font-semibold shadow-lg shadow-pink-500/30 transition-all hover:scale-105">
-                <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <Button
+                asChild
+                size="lg"
+                className="bg-gradient-to-r from-pink-500 to-orange-400 hover:from-pink-600 hover:to-orange-500 text-white border-0 rounded-full px-8 py-6 text-lg font-semibold shadow-lg shadow-pink-500/30 transition-all hover:scale-105"
+              >
+                <a href="https://apps.apple.com/app/notequest-learn-perfect-pitch/id6775383859" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   <Apple className="w-6 h-6" />
                   Download Free on iOS
                 </a>
@@ -98,5 +99,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

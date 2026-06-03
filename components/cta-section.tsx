@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { Apple, Star } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Apple, Star } from "lucide-react";
 
 export function CtaSection() {
   return (
@@ -24,11 +24,7 @@ export function CtaSection() {
           </div>
 
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-            Start Your Child&apos;s{" "}
-            <span className="bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-400 bg-clip-text text-transparent">
-              Musical Journey
-            </span>{" "}
-            Today
+            Start Your Child&apos;s <span className="bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-400 bg-clip-text text-transparent">Musical Journey</span> Today
           </h2>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -36,19 +32,21 @@ export function CtaSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button asChild size="lg" className="bg-gradient-to-r from-pink-500 to-orange-400 hover:from-pink-600 hover:to-orange-500 text-white border-0 rounded-full px-10 py-7 text-xl font-semibold shadow-xl shadow-pink-500/30 transition-all hover:scale-105">
-              <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
+            <Button
+              asChild
+              size="lg"
+              className="bg-gradient-to-r from-pink-500 to-orange-400 hover:from-pink-600 hover:to-orange-500 text-white border-0 rounded-full px-10 py-7 text-xl font-semibold shadow-xl shadow-pink-500/30 transition-all hover:scale-105"
+            >
+              <a href="https://apps.apple.com/app/notequest-learn-perfect-pitch/id6775383859" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
                 <Apple className="w-7 h-7" />
                 Download on the App Store
               </a>
             </Button>
           </div>
 
-          <p className="mt-6 text-sm text-muted-foreground">
-            Free download • No account needed • Ages 4+
-          </p>
+          <p className="mt-6 text-sm text-muted-foreground">Free download • No account needed • Ages 4+</p>
         </div>
       </div>
     </section>
-  )
+  );
 }
